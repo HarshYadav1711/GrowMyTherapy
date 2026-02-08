@@ -49,7 +49,7 @@ npm run dev
 npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the site.
+Open [http://localhost:3005](http://localhost:3005) to view the site.
 
 ## Deployment
 
