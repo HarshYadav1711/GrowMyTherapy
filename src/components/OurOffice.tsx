@@ -21,7 +21,7 @@ export default function OurOffice() {
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
                     <div className="aspect-[4/3] relative rounded-sm overflow-hidden">
                         <Image
-                            src="/images/office-1.svg"
+                            src="/images/office1.jpeg"
                             alt="Therapy office with natural light and comfortable seating"
                             fill
                             className="object-cover"
@@ -30,7 +30,7 @@ export default function OurOffice() {
                     </div>
                     <div className="aspect-[4/3] relative rounded-sm overflow-hidden">
                         <Image
-                            src="/images/office-2.svg"
+                            src="/images/office2.jpeg"
                             alt="Calm and welcoming therapy environment"
                             fill
                             className="object-cover"

@@ -33,7 +33,7 @@ export default function Hero() {
                             {/* Main Arch Image */}
                             <div className="arch-frame aspect-[3/4] relative bg-[var(--background-card)]">
                                 <Image
-                                    src="/images/hero-main.svg"
+                                    src="/images/Dr. Maya Reynolds.png"
                                     alt="Calm botanical arrangement representing peace and growth"
                                     fill
                                     className="object-cover"

@@ -38,7 +38,7 @@ export default function About() {
                             {/* Main Arch Image */}
                             <div className="arch-frame aspect-[3/4] relative bg-[var(--background-card)]">
                                 <Image
-                                    src="/images/about-main.svg"
+                                    src="/images/Dr. Maya Reynolds.png"
                                     alt="Dr. Maya Reynolds, Clinical Psychologist"
                                     fill
                                     className="object-cover"
