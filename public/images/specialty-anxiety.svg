@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <circle cx="100" cy="100" r="100" fill="#F5F2EB"/>
+  <path d="M70 100 Q100 60 130 100" stroke="#4A5D52" stroke-width="4" fill="none" opacity="0.3"/>
+  <circle cx="100" cy="130" r="20" fill="#C4A77D" opacity="0.3"/>
+  <text x="100" y="180" text-anchor="middle" fill="#4A5D52" opacity="0.4" font-family="system-ui" font-size="10">Anxiety</text>
+</svg>

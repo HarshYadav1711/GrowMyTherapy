@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#F5F2EB"/>
+  <!-- Window -->
+  <rect x="280" y="40" width="80" height="100" rx="4" fill="#4A5D52" opacity="0.15"/>
+  <line x1="320" y1="40" x2="320" y2="140" stroke="#4A5D52" stroke-width="2" opacity="0.1"/>
+  <!-- Couch -->
+  <rect x="40" y="180" width="180" height="80" rx="8" fill="#C4A77D" opacity="0.3"/>
+  <rect x="40" y="160" width="40" height="100" rx="8" fill="#C4A77D" opacity="0.25"/>
+  <!-- Plant -->
+  <circle cx="340" cy="200" r="20" fill="#4A5D52" opacity="0.3"/>
+  <rect x="335" y="220" width="10" height="40" fill="#4A5D52" opacity="0.2"/>
+  <text x="200" y="280" text-anchor="middle" fill="#4A5D52" opacity="0.4" font-family="system-ui" font-size="12">Therapy Office</text>
+</svg>

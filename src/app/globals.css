@@ -1,26 +1,163 @@
 @import "tailwindcss";
 
+/* ==============================================
+   Dr. Maya Reynolds - Design Tokens
+   Theme: Warm, Grounded, Quietly Confident
+   ============================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary Colors */
+  --color-primary: #4A5D52;
+  /* Deep sage green - calm, grounded */
+  --color-primary-dark: #3A4A42;
+  /* Darker sage for hover states */
+  --color-primary-light: #5A6D62;
+  /* Lighter shade */
+
+  /* Secondary Colors */
+  --color-secondary: #F5F2EB;
+  /* Warm cream - soft, welcoming */
+  --color-secondary-dark: #E8E4DC;
+  /* Slightly deeper cream */
+
+  /* Accent Colors */
+  --color-accent: #C4A77D;
+  /* Muted terracotta - warm, trustworthy */
+  --color-accent-light: #D4B78D;
+  /* Lighter terracotta */
+
+  /* Text Colors */
+  --color-text: #2D3436;
+  /* Deep charcoal - readable, professional */
+  --color-text-light: #636E72;
+  /* Lighter text for body copy */
+  --color-text-muted: #8B9798;
+  /* Muted text for captions */
+
+  /* Background Colors */
+  --background: #F5F2EB;
+  --background-white: #FFFFFF;
+  --background-card: #EBE8E1;
+
+  /* Spacing tokens (matching Lilac template proportions) */
+  --section-padding-y: 6rem;
+  --section-padding-x: 2rem;
+  --container-max-width: 1280px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Theme color mappings handled via CSS custom properties above */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global Styles */
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-primary);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+p {
+  color: var(--color-text-light);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+/* Container utility */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding-left: var(--section-padding-x);
+  padding-right: var(--section-padding-x);
+}
+
+/* Section utility */
+.section {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+}
+
+/* Button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Arch shape for images (matching Lilac template) */
+.arch-frame {
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+  overflow: hidden;
+}
+
+/* Circle frame for images */
+.circle-frame {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Card styles */
+.card {
+  background-color: var(--background-card);
+  padding: 2rem;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus states for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--color-accent);
+  color: white;
 }

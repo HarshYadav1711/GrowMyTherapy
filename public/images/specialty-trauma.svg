@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <circle cx="100" cy="100" r="100" fill="#F5F2EB"/>
+  <circle cx="100" cy="90" r="30" fill="#4A5D52" opacity="0.2"/>
+  <path d="M60 130 Q100 150 140 130" stroke="#C4A77D" stroke-width="3" fill="none" opacity="0.4"/>
+  <text x="100" y="180" text-anchor="middle" fill="#4A5D52" opacity="0.4" font-family="system-ui" font-size="10">Trauma</text>
+</svg>
